@@ -20,25 +20,24 @@ div .container-fluid{
     justify-content: flex-start;
   
 }
+.body_home,.body_matches,.body_estadisticas,.body_standings{
+  margin: 0%;
+  background: transparent;
+  background-size: cover;
+  background-image: url(./imagenes/preview-video-cabecera-desktop.png);
+
+}
 .bodyland{
     margin: 0%;
     display: flex;
     height:100vh;
     background: transparent;
-    background-image: linear-gradient(15deg, #0f4869a4 0%, #80d0c77a 100%), url(/5819.jpg);
+    background-image: linear-gradient(15deg, #0f4869a4 0%, #80d0c77a 100%), url(./imagenes/5819.jpg);
     justify-content: center;
   align-items: center;
     
 }
 
-/* section .background{
-    width:100%;
-    height:100%;
-   display: flex;
-   justify-content: center;
-  align-items: center;
- } */
-    
 
 div .bloque{
     display: flex;
@@ -83,4 +82,47 @@ a:link, a:visited, a:active{
       0 8px 10px 1px rgba(0, 0, 0, 0.14),
       0 3px 14px 2px rgba(0, 0, 0, 0.12);
     background-color: #1b2329;
+  }
+  main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    
+  }
+  .div_iframe{
+    margin: 0;
+    padding: 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 900px;
+    width: 900px;
+  }
+  .div_iframe{
+    display: flex;
+    
+  }
+  .descripcion_liga{
+    text-align: center;
+    font-style:italic; 
+    line-height: 30pt;
+    font-size: 12pt;
+    background-color: #222;
+    color: rgba(245,245,245);
+  }
+
+  .top{
+    background-color: #222;
+    color: rgba(245,245,245);
+  }
+ 
+  .top_inputs{
+    background-color: #222;
+    color: rgba(245,245,245);
+    width: 450px;
+    padding: 10px;
+    margin: 10px;
   }
