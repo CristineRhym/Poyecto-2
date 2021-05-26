@@ -73,9 +73,7 @@ function generar_filtro(matchesFiltrados) {
     })
 
     let radioButton1 = document.querySelector('input[name="Partidos"]:checked');
-    let radioButton2 = document.querySelector('input[name="Partidos"]:checked');
-    let radioButton3 = document.querySelector('input[name="Partidos"]:checked');
-    let radioButton4 = document.querySelector('input[name="Partidos"]:checked');
+    
 
 
     let filteredArray2 = filteredArray.filter(match => {
@@ -88,7 +86,7 @@ function generar_filtro(matchesFiltrados) {
             }
         }
 
-        if (radioButton2.value == "Empatados") {
+        if (radioButton1.value == "Empatados") {
             if (match.homeTeam.name.toLowerCase().includes(buscarMatch.toLowerCase()) && match.score.winner == "DRAW" || match.awayTeam.name.toLowerCase().includes(buscarMatch) && match.score.winner == "DRAW") {
                 return true
 
@@ -96,12 +94,9 @@ function generar_filtro(matchesFiltrados) {
                 return false
             }
 
-            // if(radioButton2=="Empatados" && match.score.winner=="DRAW"){
-            //     return true
-            // }
         }
 
-        if (radioButton3.value == "Perdidos") {
+        if (radioButton1.value == "Perdidos") {
             if (match.homeTeam.name.toLowerCase().includes(buscarMatch.toLowerCase()) && match.score.winner == "AWAY_TEAM" || match.awayTeam.name.toLowerCase().includes(buscarMatch) && match.score.winner == "HOME_TEAM") {
                 return true
 
@@ -110,7 +105,7 @@ function generar_filtro(matchesFiltrados) {
             }
         }
 
-        if (radioButton4.value == "Proximos") {
+        if (radioButton1.value == "Proximos") {
             if (match.homeTeam.name.toLowerCase().includes(buscarMatch.toLowerCase()) && match.score.winner == null || match.awayTeam.name.toLowerCase().includes(buscarMatch) && match.score.winner == null) {
                 return true
 

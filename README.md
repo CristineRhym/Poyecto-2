@@ -1,7 +1,5 @@
 <img src="./imagen_readme.jpg" alt="liga">
 
-
-
 # Proyecto La Liga Web
 
 La Liga Web es una página donde puedes encontrar un abanico de información sobre la liga 2020-2021.
@@ -35,4 +33,7 @@ V 1.0 - Proyecto presentado.
 
 ## TO DO
 ***
-()
+Mejorar responsive
+Mejorar diseño
+Añadir footer
+Imagenes equipos
